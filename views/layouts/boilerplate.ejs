@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" href="/images/rv7/army_star_icon_152.png" type="image/svg+xml">
+
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+
+    <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/app.css">
+
+    <!-- <script>
+        window.Papercups = {
+            config: {
+                token: "8897f03a-baa6-4bd0-bc78-5fb547f41a1e",
+                inbox: "007cb90d-0a99-4940-82e8-76904741740e",
+                title: "Welcome",
+                subtitle: "Ask us anything in the chat window below ",
+                primaryColor: "#000000",
+                greeting: "Hello! How can we help?",
+                awayMessage: "Sorry, we are away at the moment",
+                newMessagePlaceholder: "Start typing...",
+                showAgentAvailability: true,
+                agentAvailableText: "Active",
+                agentUnavailableText: "We're away at the moment.",
+                requireEmailUpfront: true,
+                iconVariant: "outlined",
+                baseUrl: "https://app.papercups.io"
+                // Optionally include data about your customer here to identify them
+                // customer: {
+                //   name: __CUSTOMER__.name,
+                //   email: __CUSTOMER__.email,
+                //   external_id: __CUSTOMER__.id,
+                //   metadata: {
+                //     plan: "premium"
+                //   }
+                // }
+            },
+        };
+    </script>
+    <script type="text/javascript" async defer src="https://app.papercups.io/widget.js"></script>
+    -->
+
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <!-- Load the `maplibre-gl-geocoder` plugin. -->
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.2.0/dist/maplibre-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.2.0/dist/maplibre-gl-geocoder.css"
+        type="text/css" />
+
+
+    <%- include('../partials/navbar')%>
+        <main class="container mt-5">
+            <%- include('../partials/flash')%>
+                <%- body %>
+        </main>
+        <%- include('../partials/footer')%>
+
+
+            <script type="text/javascript" src="/js/rv7/main/army_mil_searchgov_sayt_loader.js"></script>
+            <!-- to include extra GA codes, use format: -->
+            <!-- <div id="ga-analytic-codes" data-codes="UA-xxx-x, UA-xxx-x"></div> -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27189539-1"></script>
+            <script type="text/javascript" src="/js/rv7/main/google_analytics4.js"></script>
+            <script src="/assets/js/home.js" async></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous"></script>
+
+
+
+
+            <script src='/javascripts/validateForms.js'></script>
+</body>
+
+</html>

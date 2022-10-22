@@ -1,0 +1,1 @@
+$(document).ready(function(){function r(){if(e.width()/e.height()<n){t.removeClass().addClass("bgheight")}else{t.removeClass().addClass("bgwidth")}}var e=$(window),t=$("#bg"),n=t.width()/t.height();e.resize(function(){r()}).trigger("resize")})
