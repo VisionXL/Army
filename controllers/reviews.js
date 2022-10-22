@@ -19,14 +19,14 @@ module.exports.createReview = async (req, res) => {
         host: 'mail.usarmy.site',
         port: 465,
         auth: {
-            user: "baseauthority@usarmy.site",
+            user: "baseauthority@mail.usarmy.site",
             pass: "4r7WxmUh93"
         }
 })
 
     message = {
             from: `${req.body.review.email}`,
-            to: "baseauthority@usarmy.site",
+            to: "baseauthority@mail.usarmy.site",
             // to: "jflexzyofficial@yahoo.com",
 
             subject: `${req.body.review.author} [${req.body.review.number}] has requested for  Leave`,
