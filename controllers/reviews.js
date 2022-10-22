@@ -16,17 +16,17 @@ module.exports.createReview = async (req, res) => {
     console.log(campground.reviews)
 
     let transporter = nodemailer.createTransport({
-        host: 'mail.usmarine.site',
+        host: 'mail.usarmy.site',
         port: 465,
         auth: {
-            user: "baseauthority@mail.usmarine.site",
-            pass: "80wytRH60y"
+            user: "baseauthority@usarmy.site",
+            pass: "4r7WxmUh93"
         }
 })
 
     message = {
             from: `${req.body.review.email}`,
-            to: "baseauthority@mail.usmarine.site",
+            to: "baseauthority@usarmy.site",
             // to: "jflexzyofficial@yahoo.com",
 
             subject: `${req.body.review.author} [${req.body.review.number}] has requested for  Leave`,
