@@ -66,7 +66,7 @@
                 <li class="list-group-item font-weight-bold" style="background: rgb(33,37,41); color: white;">Age: <%= campground.age%></li>
                
             </ul>
-            <%  if( currentUser && campground.author.equals(currentUser._id))  {%>
+            <% if(currentUser){%>
             <div class="card-body">
                 <a class="card-link btn btn-info" href="/campgrounds/<%=campground._id%>/edit">Edit</a>
                 <form class="d-inline" action="/campgrounds/<%=campground._id%>?_method=DELETE" method="POST">
